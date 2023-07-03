@@ -1,0 +1,82 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-gray-100
+}
+
+.image-container {
+  position: relative;
+  display: inline-block;
+}
+
+.text-overlay {
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  right:-50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  padding: 10px;
+  
+}
+
+.text-overlay h2 {
+  margin: 0;
+}
+
+.row-container {
+  display: flex;
+  flex-wrap: wrap; 
+}
+
+.forum-section {
+  width: 60%;
+}
+
+.stories-section {
+  width: 40%;
+ }
+
+@media (max-width: 850px) {
+  .forum-section {
+    width: 100%; 
+  }
+  .stories-section {
+    width: 100%; 
+  }
+  .image {
+    width: 70%;
+  }
+}
+
+.content {
+  font-size: 16px;
+}
+
+@media (max-width: 900px) {
+  .column {
+    width: 100%;
+  }
+
+  .title {
+    font-size: 20px; 
+  }
+
+  .content {
+    font-size: 11px; 
+  }
+}
+
+@media (max-width: 1110px) {
+
+  .title {
+    font-size: 20px; 
+  }
+
+  .content {
+    font-size: 13px; 
+  }
+}
